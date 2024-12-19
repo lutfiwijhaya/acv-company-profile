@@ -1,0 +1,212 @@
+    /* ======= Global Styles ======= */
+    body {
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        padding-top: 100px; /* Menyesuaikan dengan tinggi header */
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999; /* Pastikan lebih tinggi dari elemen lain */
+    }
+    
+ 
+    
+    /* ======= Hero Banner Styles ======= */
+    .hero-banner {
+        padding-top: 0px; /* Menambahkan jarak sesuai dengan tinggi header */
+    }
+    
+    .hero-banner-text {
+        position: absolute;
+        top: 60%;
+        left: 10%;
+        transform: translateY(-50%);
+        color: white;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        font-size: 4vw; /* Default untuk layar besar */
+    }
+    .d-flex {
+       flex-direction: row;
+    }
+    
+    /* Responsiveness */
+    @media (max-width: 768px) {
+        .hero-banner-text {
+            font-size: 4vw; /* Ukuran font lebih kecil untuk layar tablet */
+            left: 30px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .hero-banner-text {
+            font-size: 4vw; /* Ukuran font lebih kecil untuk layar ponsel */
+            left: 30px;
+        }
+    }
+    .dropdown-menu {
+    
+       font-size: 1.5vw !important;
+    }
+
+    .mission-2024 {
+        text-align: center; /* Teks di tengah secara horizontal */
+        padding: 0; /* Hilangkan padding */
+    }
+    
+    .mission-2024 h2 {
+        font-size: 2vw; /* Ukuran judul */
+        margin-bottom: 5px; /* Jarak bawah judul */
+        color: #333; /* Warna teks judul */
+    }
+    
+    .mission-2024 p {
+        font-size: 1rem; /* Ukuran teks paragraf */
+        line-height: 1.6; /* Jarak antar baris */
+        color: #555; /* Warna teks paragraf */
+    }
+
+     /* Section Visi Misi */
+     .visi-misi-section {
+        background: url('images/BACKGROUND-01.png') no-repeat center center;
+        /* Gambar sebagai latar belakang */
+        background-size: cover;
+        /* Gambar mengisi seluruh area section */
+        width: 80%;
+        /* Lebar section 80% dari layar */
+        margin: 0 auto;
+        /* Pusatkan section secara horizontal */
+        padding: 50px 0;
+        /* Jarak atas dan bawah */
+        border-radius: 15px;
+        /* Opsional: Sudut melengkung */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        /* Opsional: Tambahkan bayangan */
+        padding-top: ;
+     }
+
+     /* Kontainer untuk section */
+     .visi-misi-section .container {
+        width: 90%;
+        /* Lebar kontainer */
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        /* Membiarkan konten tetap melipat jika diperlukan */
+        justify-content: space-between;
+        /* Memberikan jarak antar blok */
+     }
+
+     /* Blok konten visi misi */
+     .visi-misi-block {
+        background-color: #ffffff;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        /* flex-basis: 48%;  */
+        max-width: 48%;
+        margin-bottom: 20px;
+        /* Jarak antar blok */
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        min-height: 150px;
+        /* Agar semua kolom memiliki tinggi minimal */
+        flex-direction: column;
+     }
+
+     /* Styling gambar */
+     .visi-misi-block .visi-misi-image {
+        flex-basis: 40%;
+        /* Lebar gambar */
+        max-width: 40%;
+     }
+
+     .visi-misi-block .visi-misi-image img {
+        width: 100%;
+        /* Gambar mengisi elemen secara proporsional */
+        height: auto;
+        /* Menjaga proporsi gambar */
+        border-radius: 8px;
+     }
+
+     /* Styling teks */
+     .visi-misi-block .visi-misi-text {
+        /* flex-basis: 55%; */
+        /* max-width: 55%; */
+        padding-left: 10px;
+        text-align: center;
+     }
+
+     .visi-misi-block .visi-misi-text h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+        text-align: center;
+     }
+
+     .visi-misi-block .visi-misi-text p {
+        font-size: 0.9rem;
+        color: #555;
+        line-height: 1.4;
+        text-align: center;
+     }
+
+
+
+     /* Responsiveness - Tetap dua kolom di layar kecil */
+     @media (max-width: 768px) {
+        .visi-misi-block {
+           flex-basis: 48%;
+           /* Tetap dua kolom di layar kecil */
+           max-width: 48%;
+           /* Pastikan tetap dua kolom */
+           padding: 5px;
+           /* Kurangi padding untuk menyesuaikan */
+        }
+
+        .visi-misi-block .visi-misi-image {
+           flex-basis: 45%;
+           /* Kurangi ukuran gambar */
+           max-width: 45%;
+        }
+
+        .visi-misi-block .visi-misi-text {
+           /* flex-basis: 50%;  */
+           /* max-width: 50%; */
+           padding-left: 5px;
+           text-align: center;
+        }
+
+        .visi-misi-block .visi-misi-text h2 {
+           font-size: 2VW;
+           /* Ukuran judul lebih kecil */
+           text-align: center;
+        }
+
+        .visi-misi-block .visi-misi-text p {
+           text-align: center;
+           font-size: 1.2VW;
+           /* Ukuran teks lebih kecil */
+        }
+     }
+    
+
+     
+
+   
+    
+    
+    
+      
+     
+  
+
+   
+    
+    
